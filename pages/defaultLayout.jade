@@ -1,0 +1,19 @@
+include ./_tools/mixins
+block vars
+
+doctype 
+html(lang="fr")
+  head
+    meta(charset="utf-8")
+    title Map
+    link(rel="stylesheet" href="#{url.css}styles.css")
+    block style 
+  body(class="page") 
+  
+    block header
+    div.main(role="main")
+      block content
+
+    block footer
+
+    block scripts
