@@ -1,10 +1,16 @@
 extends defaultLayout
 
+block vars
+  - var key = 'trebeurden'
+
 block style
   <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
 
 block content
-  <div id="mapid"></div>
+  each val in maps
+    if val.id == key
+      div(class='map' id = val.id data-x = val.x data-y = val.y)
+  
 
 block scripts
   <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>

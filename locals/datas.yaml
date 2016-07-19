@@ -2,3 +2,18 @@
 
   url:
     css: css/
+
+  maps:
+    trebeurden:
+      id: 'trebeurden'
+      x : 48.77
+      y : -3.5
+      places:
+        ileMillau:
+          name : Île Millau
+          x : 48.77
+          y : -3.6 
+        plageTresmeur:
+          name : Plage de Tresmeur
+          x : 48.765
+          y : -3.58
