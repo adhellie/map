@@ -1,0 +1,13 @@
+mixin checkboxList(list)
+  ul.list
+    each val in list
+      if val.x && val.y
+        li
+          input(data-x = val.x data-y = val.y data-title = val.name type="checkbox" id = "cbox" + index value = val.name) 
+          label(for = "cbox" + index)!=val.name
+      else
+        li
+          input(type="checkbox" id = "cbox" + index value = val.name) 
+          label(for = "cbox" + index)!=val.name
+
+        

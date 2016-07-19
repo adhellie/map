@@ -9,7 +9,9 @@ block style
 block content
   each val in maps
     if val.id == key
-      div(class='map' id = val.id data-x = val.x data-y = val.y)
+      div.mapCtn
+        +checkboxList(val.places)
+        div(class='map' id = val.id data-x = val.x data-y = val.y)
   
 
 block scripts

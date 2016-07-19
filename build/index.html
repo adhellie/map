@@ -7,7 +7,19 @@
   </head>
   <body class="page"> 
     <div role="main" class="main">
-      <div id="trebeurden" data-x='48.77' data-y='-3.5' class="map"></div>
+      <div class="mapCtn">
+        <ul class="list">
+          <li>
+            <input data-x='48.77' data-y='-3.6' data-title="Île Millau" type="checkbox" id="cboxundefined" value="Île Millau"/>
+            <label for="cboxundefined">Île Millau</label>
+          </li>
+          <li>
+            <input data-x='48.765' data-y='-3.58' data-title="Plage de Tresmeur" type="checkbox" id="cboxundefined" value="Plage de Tresmeur"/>
+            <label for="cboxundefined">Plage de Tresmeur</label>
+          </li>
+        </ul>
+        <div id="trebeurden" data-x='48.77' data-y='-3.5' class="map"></div>
+      </div>
     </div><script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
     <script src="js/script.js"></script>
   </body>
